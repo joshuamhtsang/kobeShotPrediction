@@ -2,7 +2,8 @@ FROM python:3.7-slim
 RUN apt update && apt install -y \
     python3-dev \
     python3-pip \
-    curl
+    curl \
+    vim
 
 # JAVA
 ARG JAVA_MAJOR_VERSION=8
