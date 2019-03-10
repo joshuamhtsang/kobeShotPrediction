@@ -31,3 +31,6 @@ RUN curl -sL --retry 3 \
     | tar x -C /usr/ \
     && mv /usr/$SPARK_PACKAGE $SPARK_HOME \
     && chown -R root:root $SPARK_HOME
+
+WORKDIR /home/
+RUN pip3 install -r requirements.txt
